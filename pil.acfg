@@ -1,0 +1,12 @@
+# Minetest MULTIARCH
+# For PIL TronchaToro 0.7.4 and latests versions
+# 5.1.0
+appname=minetest
+prstarter=normal
+prexe=init.sh
+desc="Minetest MULTIARCH"
+autor=EISHU
+#Special variables (Available for 0.8.0 and latest...)
+if64=init64.sh
+if32=init32.sh
+depends="none"

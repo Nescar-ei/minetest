@@ -1,0 +1,6 @@
+#!/bin/bash
+if [ "$PACKNAME" ]; then
+rm -r /usr/share/applications/pil.eishu-minetest-$PACKNAME.desktop
+else
+echo "No var 'PACKNAME' found."
+fi

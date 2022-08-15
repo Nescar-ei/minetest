@@ -1,0 +1,19 @@
+#!/bin/bash
+if [ "$PACKNAME" ]; then
+echo "Creating desktop ink..."
+cat << EOF > /usr/share/applications/pil.eishu-minetest-$PACKNAME.desktop
+[Desktop Entry]
+Exec=pil load $PACKNAME
+Icon=minetest
+Name=Minetest
+Name[en]=Minetest
+Name[es]=Minetest
+Comment[es]=Juego con mundos infinitos SandBox Multijugador. INFO: Este es un archivo generado automaticamente, nombre: $PACKNAME
+Comment[en]=Multiplayer infinite-world block sandbox. INFO: This is auto generated desktop link, pack is $PACKNAME
+Type=Application
+Categories=Game;
+Terminal=true
+EOF
+else
+echo "PIL was installed incorrectly or this is an OLD version."
+fi
